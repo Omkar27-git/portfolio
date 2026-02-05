@@ -24,3 +24,40 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+@keyframes spin-fast {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title-halo {
+  position: relative;
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.title-halo::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background: conic-gradient(
+    #a855f7,
+    #ec4899,
+    #6366f1,
+    #22d3ee,
+    #a855f7
+  );
+  border-radius: inherit;
+  filter: blur(14px);
+  opacity: 0.9;
+  animation: spin-fast 3s linear infinite;
+  z-index: -1;
+}

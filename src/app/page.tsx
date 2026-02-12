@@ -15,17 +15,36 @@ import {
   SiGithub,
   SiLinkedin,
   SiLeetcode,
-  SiX
+  SiX,
+  SiMongodb,
+  SiAmazon,
+  SiResend,
+  SiMui,
+  SiShadcnui,
+  SiVercel,
+  SiVite,
+  SiPrisma
 } from "react-icons/si";
+
 
 const skills = [
   { name: "React", icon: SiReact, color: "#61DAFB" },
   { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
-  { name: "Tailwind", icon: SiTailwindcss, color: "#38BDF8" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8" },
   { name: "Node.js", icon: SiNodedotjs, color: "#3C873A" },
-  { name: "Docker", icon: SiDocker, color: "#2496ED" },
+  { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
+  { name: "Docker", icon: SiDocker, color: "#2496ED" },
+  { name: "AWS", icon: SiAmazon, color: "#FF9900" },
+  { name: "Resend", icon: SiResend, color: "#000000" },
+  { name: "Material UI", icon: SiMui, color: "#007FFF" },
+  { name: "ShadCN", icon: SiShadcnui, color: "#ffffff" },
+  { name: "Vercel", icon: SiVercel, color: "#ffffff" },
+  { name: "Vite", icon: SiVite, color: "#646CFF" },
+  { name: "GitHub", icon: SiGithub, color: "#ffffff" },
+  { name: "Prisma", icon: SiPrisma, color: "#ffffff" },
 ];
+
 
 
 

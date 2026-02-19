@@ -310,6 +310,52 @@ export default function Home() {
       </div>
     </motion.div>
 
+
+
+     {/* ---------- Project 3 : Smart BookMark App ---------- */}
+    <motion.div
+      whileHover={{ y: -14 }}
+      transition={{ type: "spring", stiffness: 300, damping: 12 }}
+      className="rounded-2xl border border-purple-500/40 hover:border-purple-400 transition-all
+                 hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] overflow-hidden cursor-pointer 
+                 flex flex-col justify-between bg-black/40"
+    >
+      {/* Project Image */}
+      <div className="w-full h-[200px] overflow-hidden">
+        <img
+          src="/smartbookmark.png"
+          alt="Smart-Bookmark App"
+          className="w-full h-full object-cover hover:scale-105 transition duration-300"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="p-8 flex flex-col justify-between flex-1">
+        <div>
+          <h3 className="text-xl font-semibold mb-3">
+            Smart-Bookmark App
+          </h3>
+
+          <p className="text-gray-400 text-sm leading-relaxed">
+            A bookmark management application that allows users to organize, manage, and access your favorite links anytime. Securely store your bookmarks with real-time updates.
+          </p>
+        </div>
+
+        {/* Live Link */}
+        <a
+          href="https://smart-bookmark-app-eta-nine.vercel.app/"
+          target="_blank"
+          className="mt-8 text-sm text-purple-400 hover:underline flex items-center gap-2"
+        >
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]"></span>
+          </span>
+          Live Preview →
+        </a>
+      </div>
+    </motion.div>
+
   </div>
 </section>
 {/* ===================== End Projects ===================== */}
